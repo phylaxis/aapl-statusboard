@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Maccast Status Board</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/excanvas.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="js/spinners.min.js"></script>
+
+</head>
+<body style="background-color: #000;">
+	<div id='spinner'><!-- spinner will go here --></div>
+<script type="text/javascript">
+var spinner = Spinners.create('#spinner', {
+  radius: 12,
+  height: 12,
+  width: 5,
+  dashes: 10,
+  opacity: 1,
+  padding: 3,
+  rotation: 700,
+  color: '#7e7e7e'
+}).play();
+
+spinner.center();
+</script>
+</body>
+</html>
